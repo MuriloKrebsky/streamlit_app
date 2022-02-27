@@ -123,7 +123,7 @@ Main points to note:
     since we don't have data on FTA.
     (it could only be that every position goes with the same frequency to the free throw line but guards have a higher FTM %, which is also pretty reasonable)
 *   Foul distribution has a low variance regardless to positions/levels.
-    However, we'll further look into the relation blk x fouls and stl * fouls 
+    However, we'll further look into the relation blk x fouls and stl x fouls 
 *   Contrary to what was expected, guards do not have the highest amount of steals
 *   Taking into account outliers, we can say that the position does not affect on the amount of 2 and 3 pts made.
     Again, here we could explore better if FGA was available.
@@ -146,8 +146,8 @@ st.image(image, caption='points by position', use_column_width='auto')
 st.write("""
     This may be an evidence that the 3FG% was low. Generally guards and fowards have higher 3FG% than centers,
     but here, every position got roughly the same amount of 3PM.
-    (In the current era of 3's that we live, is very odd that guards have shooted few 3 pointers.
-    Since the amount of 3 mades is almost the same for every position, what explain this is a low 3FG%)
+    (In the current era of 3's that we live, is very odd that guards have shooted few 3 pointers.)
+    Since the amount of 3 mades is almost the same for every position, what explain this is a low 3FG%
 
     Note that guards have higher 2PM than centers, which is curious.
 """)
@@ -162,7 +162,7 @@ st.write("""
     The same thing goes to Emmanuel, and a special attention to Daniel and Louzeiro whose even being guards
     have a higher zscore than any other player except by Emmanuel and Bruno.
 
-    Obs: zscore is a measure tha tells you "how far from the average" you are.
+    Obs: zscore is a measure that tells you "how far from the average" you are.
     In this case, the zscore was made taking into account each of the positions.
 """)
 
@@ -209,7 +209,7 @@ st.write("If we only look at the stantard efficiency (not so stantard) "
          "few exceptions. However, since the FGA was not take into account "
          "in this formula the measure might be biased. Therefore, a good "  
          "strategy is to look at the so called defensive efficiency, which is "
-         "given by: (stl+reb+blk)/fouls. In defensive terms, these 4 attributes"
+         "given by: (stl+reb+blk)/fouls. In defensive terms, these 4 attributes "
          "are pretty explanatory by themselves.")
 st.write("#")
 st.write("Looking at the defensive efficiency we see that Bruno and Lucao "
