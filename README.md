@@ -1,4 +1,4 @@
-# Streamlit_app
+# Streamlit app
 ## Streamlit app to perform data analysis on a basketball championship data 
 
 ### st.py: main code that creates the whole app
